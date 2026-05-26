@@ -1,16 +1,154 @@
-# React + Vite
+# Tic Tac Toe — Chai & Cookies Edition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and cozy Tic Tac Toe game built with React.  
+This project focuses on clean component architecture, reusable logic with custom hooks, and a beautifully designed UI inspired by warm pastel aesthetics.
 
-Currently, two official plugins are available:
+The game includes smooth interactions, winner detection, draw handling, responsive design, and a structured React codebase suitable for beginners learning real-world React patterns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Features a cozy themed interface with:
 
-## Expanding the ESLint configuration
+- Chai ☕ vs Cookies 🍪
+- Soft pastel gradients
+- Glassmorphism inspired card UI
+- Interactive hover animations
+- Winner highlighting
+- Responsive layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- 3x3 Tic Tac Toe board
+- Two-player turn system
+- Winner detection
+- Draw detection
+- Reset game functionality
+- Winning cell highlight
+- Component-based architecture
+- Custom React hook for game logic
+- Responsive modern UI
+
+---
+
+## Project Structure
+
+```txt
+src
+│
+├── components
+│   ├── Board.jsx
+│   ├── Cell.jsx
+│   ├── Status.jsx
+│   └── Buttons.jsx
+│
+├── hooks
+│   └── useGameLogic.js
+│
+├── styles
+│   └── App.css
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Tech Stack
+
+- React
+- JavaScript
+- CSS3
+- Vite
+
+---
+
+## Game Logic
+
+The game uses:
+
+- Array-based board state
+- Conditional rendering
+- Turn switching
+- Winning pattern checks
+- Draw detection
+- React state management with hooks
+
+Winning combinations are checked using predefined board patterns.
+
+---
+
+## Component Architecture
+
+### App.jsx
+
+Main layout component responsible for assembling the UI.
+
+### useGameLogic.js
+
+Custom hook that contains:
+
+- Board state
+- Turn logic
+- Winner detection
+- Draw logic
+- Reset functionality
+
+### Board.jsx
+
+Renders the 3x3 board grid.
+
+### Cell.jsx
+
+Represents a single playable cell.
+
+### Status.jsx
+
+Displays:
+
+- Current turn
+- Winner
+- Draw state
+
+### Buttons.jsx
+
+Contains reset and action buttons.
+
+---
+
+## Learning Outcomes
+
+This project helps practice:
+
+- React fundamentals
+- Component architecture
+- Custom hooks
+- State management
+- Props
+- Event handling
+- Conditional rendering
+- Clean folder structure
+- Reusable UI components
+
+---
+
+## Future Improvements
+
+Possible enhancements:
+
+- Score tracking
+- Sound effects
+- AI opponent
+- Dark/light mode
+- Multiplayer support
+- Move history
+- Animations with Framer Motion
+
+---
+
+## License
+
+This project is open source and available for learning and personal use.
